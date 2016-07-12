@@ -1,0 +1,174 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* common */
+body { font-size: 12px; line-height: 1.6; color: #333; font-family:"Microsoft Yahei", Arial;background: #f3f3f3}
+.lPhoto{
+	width: 240px;
+	height: 280px;
+	overflow: hidden;
+	border: rgba(93, 92, 92, 0) 1px solid;
+	box-shadow: 0 1px 4px rgba(0,0,0,.15);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.15);
+	-ms-box-shadow: 0 1px 4px rgba(0,0,0,.15);
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,.15);
+	position: relative;
+}
+.lPhoto:hover{
+    box-shadow:0 1px 5px rgba(74, 69, 69, 0.38);
+    -webkit-box-shadow:0 1px 5px rgba(74, 69, 69, 0.38);
+    -moz-box-shadow:0 1px 5px rgba(74, 69, 69, 0.38);
+    -ms-box-shadow:0 1px 5px rgba(74, 69, 69, 0.38);
+    -o-box-shadow:0 1px 5px rgba(74, 69, 69, 0.38);
+}
+.lPhoto ul{
+	width: 216px;
+    height: 224px;
+    overflow: hidden;
+    margin: 5%;    
+}
+.lPhoto ul:hover{cursor: pointer;}
+.lPhoto ul li{
+	float: left;
+}
+.lPhoto ul li img{
+	width: 234px;
+	height:272px;
+}
+.lPhoto .lPcount{
+	font-family: "Gulim";
+    font-size: 40px;
+    position: absolute;
+    right: 16px;
+    bottom: 34px;
+    color: #fff;
+    font-weight: bold;
+}
+.lPhoto .lPtitle{   width: 90%;
+    margin-left: 5%;
+    font-size: 14px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#lPlock{
+	position: fixed;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    filter:alpha(opacity=60);
+    z-index: 99998; 
+    display: none;  
+}
+
+#lPbox{
+	position: absolute;
+	width: 60%;
+    height: 70%;    
+    left: 20%;
+    top: -71%;
+    bottom: 0;
+    border: #fff 4px solid;
+    border-radius: 4px;
+    z-index: 99999;
+}
+
+#lPbox_pic{
+	display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+}
+
+#lPleft{
+	display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    left: -14px;
+    display: none;
+}
+
+#lPright{
+	display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    right: -14px;
+    display: none;
+}
+#lPclose{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.lPsubbg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #000;    
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+}
+.lPsubtitle{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+    display: inline-block;
+    width: 80%;
+    overflow: hidden;
+    height: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
