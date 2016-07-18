@@ -98,7 +98,7 @@
                 pic.find('img').css('width', '100%');
             } else {
                 bWidth = pWidth;
-                pic.find('img').css('width', 'auto');
+                pic.find('img').css('width', '100%');
             };
 
             if (pHeight > dHeight) {
@@ -106,7 +106,7 @@
                 pic.find('img').css('height', '100%');
             } else {
                 bHeight = pHeight;
-                pic.find('img').css('height', 'auto');
+                pic.find('img').css('height', '100%');
             };
 
             var bLeft = (dWidth - bWidth) / 2,
