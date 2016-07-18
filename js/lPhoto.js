@@ -93,7 +93,7 @@
             var bWidth,
                 bHeight;
 
-            if (pWidth > dWidth) {
+            if (pWidth >= dWidth) {
                 bWidth = dWidth * 0.8;
                 pic.find('img').css('width', '100%');
             } else {
